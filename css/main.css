@@ -1,0 +1,249 @@
+/*universal selector which would apply to the whole page*/
+* {
+  /*squished all the writting and elenments together*/
+  margin: 0;
+  /*pushed the text on the navigation to the left so that it was flushed with the left side of the page*/
+  padding: 0;
+}
+
+/*selects the body tag to custimize the elements in CSS*/
+body {
+  /*changed the background color of the page to a darkish gray color*/
+  background-color: #2A2A2A;
+  /*change the font size of the text which made the writting smaller*/
+  font-size: 14px;
+}
+
+/*selects the class of navigation*/
+.navigation {
+  /*changed the background navigation where the navigation is to a darker gray*/
+  background-color: #262626;
+  /*spaced out the vagiotion which increased the box of the navigation by a bit*/
+  height: 80px;
+}
+
+/*selects both the classes of navigation and logo*/
+.navigation .logo {
+  /*changed the color of PICO logo to white*/
+  color: #fff;
+  /*changed them to float elements which cased the home link to move next to the PICO logo*/
+  float: left;
+  /*increased the font size which also moved the docs link next to the PICO logo under the home link*/
+  font-size: 24px;
+  /*made the PICO logo a bit larger*/
+  font-weight: bold;
+  /*caused the PICO logo to move a bit up leaving more space between it and the download link*/
+  line-height: 20px;
+  /*moved the PICO logo down because it gave it a margin and caused the 3 links in the navigatio to line up vertically*/
+  margin-top: 15px;
+  /*increased the padding which moved the navigation and logo down and a bit more to the right*/
+  padding: 15px 15px 15px 35px;
+}
+
+/*slects the ul tag within the navigation class*/
+.navigation ul {
+  /*moved the three navogation elements to the right corner of the page*/
+  float: right;
+  /*changed the font size of the navigation elements*/
+  font-family: arial;
+  /*no noticeable change in the page*/
+  font-size: 14px;
+  /*made the text in the navigation bolder*/
+  font-weight: bold;
+  /*caused the navigation elements to move left and down to not be so close to the corner of the page*/
+  padding: 15px 35px 15px 15px;
+  /*moved the elements further down the page a bit*/
+  margin-top: 20px;
+}
+
+/*selects the li elements in the navigation class*/
+.navigation li {
+  /*caused the elements to line line up horizontally instead of vertically*/
+  display: inline-block;
+}
+
+/*selcts the li tags in the navigation class and the anchor tag in the active class*/
+.navigation li.active a{
+  /*changed the color of the home link in the navigation to a redish color*/
+  color: #FF6760
+}
+
+/*selected the anchor tag in the navigation class*/
+.navigation a {
+  /*changed the color of the navigation elements into an off-white color*/
+  color: #D8D8D8;
+  /*spaced out the elements in the navigation bar*/
+  margin-right: 35px;
+  /*removes the decoration of the elements in the navigation bar so that they are no longer underlined*/
+  text-decoration: none;
+  /*males all the text in the navigation bar into uppercase*/
+  text-transform: uppercase;
+}
+
+/*selects the header class*/
+.header {
+  /*changed the color of the heading to an off-white color*/
+  color: #D8D8D8;
+  /*changed the font style of the header*/
+  font-family: "Open Sans", sans-serif;
+  /*center the text of the header to the center of the page*/
+  text-align: center;
+}
+
+/*selects the h1 tags in the header class*/
+.header h1 {
+  /*made the header of the page bigger*/
+  font-size: 48px;
+  /*made the text "Introducing Pico" skinnier*/
+  font-weight: 300;
+  /*brought down the header creating more space between the header and the navigation bar*/
+  margin-top: 65px;
+}
+
+/*selects the h1 tag inside the header class*/
+.header h1 > span {
+  /*made the header bolder and the "pico" significantly bolder than "producing"*/
+  font-weight: bold;
+}
+
+/*selects the h2 tag inside the header class*/
+.header h2 {
+  /*increased the font size making the heading bigger*/
+  font-size: 36px;
+  /*made the text in the header skinnier*/
+  font-weight: 300;
+  /*created space between the h1 and h2 elements in the heading*/
+  margin: 25px 0;
+}
+
+/*selcts the h2 and span tags in the header class*/
+.header h2 > span {
+  /*changed the color of the "&" symbol to a redish color*/
+  color: #EB615B;
+}
+
+/*selects the anchor tags in the header class*/
+.header a {
+  /*chaged the background color of the "download now" link to a reddish color*/
+  background-color: #FF6760;
+  /*no noticeable difference*/
+  border: none;
+  /*rounded the edges so that its more like an elipse than a rectangle*/
+  border-radius: 10px;
+  /*changed the color of the text to an off-white color*/
+  color: #FFFFFF;
+  /*no noticeable change*/
+  display: inline-block;
+  /*spaced it out from the rest of the header and the paragraph*/
+  margin: 10px 0 75px 0;
+  /*made the box of "download now" bigger*/
+  padding: 15px 20px;
+  /*took off the unerline from the text*/
+  text-decoration: none;
+  /*capitalized the "Download now" text*/
+  text-transform: uppercase;
+}
+
+/*selected the features class*/
+.features {
+  /*changed the color of the features class to white instead of gray*/
+  background-color: #F6F6F6;
+  /*changed the color of the text to a lighter gray*/
+  color: #616161;
+  /*gave more sapce below the text*/
+  height: 450px;
+}
+
+/*selected the item class*/
+.item {
+  /*makes the item more horizontally so that they aren't lined up vertically*/
+  float: left;
+  /*spaced out the different sections of the body of the page*/
+  margin: 25px 0;
+  /*spaced out the sections a bit further*/
+  padding: 5px 0px 20px 0;
+  /*center the headings of each section correspondingly so they are on top middle of their paragraph*/
+  text-align: center;
+  /*the sections sprean out evenly with 3 sections per row in 2 rows*/
+  width: 33.33333333333333%;
+}
+
+/*selected the h3 tag in the item class*/
+.item h3 {
+  /*changed the font size and the headers of the sections seemed to have gotten smaller*/
+  font-size: 16px;
+  /*spaced the sections out a little more*/
+  padding: 5px 0;
+}
+
+/*selects the p tag in the item class*/
+.item p {
+  /*made the text in the sections bigger*/
+  font-size: 16px;
+  /*spaced the heading of the sections and the paragraphs*/
+  padding: 10px 0;
+}
+
+/*selects the footer class*/
+.footer {
+  /*changed the color of the text located in the footer to white*/
+  color: #D8D8D8;
+  /*centered the text in the bottom of the page*/
+  text-align: center;
+}
+
+/*selects the h4 tag in the footer class*/
+.footer h4 {
+  /*changed the size of the header of the footer*/
+  font-size: 24px;
+  /*spaced the text in the bottom of the page*/
+  margin: 50px 0 25px 0;
+}
+
+/*selects the p tag in the footer class*/
+.footer p {
+  /*changes the color of the text to a light gray*/
+  color: #858585;
+  /*made the text in the paragraph of the footer bigger*/
+  font-size: 16px;
+  /*not much noticeable difference*/
+  padding: 3px 0;
+}
+
+/*selects the p and a tags in the footer class*/
+.footer p a {
+  /*changed the color of the anchor tags in the footer to a brownish red*/
+  color: #793F3D;
+}
+
+/*selects the ID of socialIcons*/
+#socialIcons {
+  /*didn't notice a difference*/
+  margin: 15px 0 50px 0;
+}
+
+/*selects the anchor tags in the socialIcons ID*/
+#socialIcons a {
+  /*made the color of the icons white*/
+  color: #FFFFFF;
+}
+
+/*selects the twitter icon at the bottom of the page*/
+#socialIcons .fa-twitter {
+  /*make the background behind the twitter icon blue*/
+  background-color: #5DAED5;
+  /*made the icon circular instead of a square*/
+  border-radius: 50%;
+  /*makes the circle behind the twitter icon larger*/
+  padding: 5px;
+}
+
+/*selects the facebook icon at the bottom of the page*/
+#socialIcons .fa-facebook {
+  /*changed the background color to blue*/
+  background-color: #4470CF;
+  /*made the background to a circle instead of a square*/
+  border-radius: 50%;
+  /*made the circle bigger*/
+  padding: 5px 8px;
+}
